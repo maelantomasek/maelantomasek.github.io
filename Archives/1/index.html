@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maëlan Tomasek — Animal Cognition Researcher &amp; Author</title>
+  <meta name="description" content="Maëlan Tomasek is a PhD researcher in comparative psychology and veterinarian studying animal cognition, behaviour, and the evolution of cognitive abilities in Tanganyikan cichlids.">
+  <meta name="author" content="Maëlan Tomasek">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maëlan Tomasek — Animal Cognition Researcher &amp; Author">
+  <meta property="og:description" content="PhD researcher in comparative psychology and veterinarian studying animal cognition and the evolution of cognitive abilities in wild Tanganyikan cichlids.">
+  <meta property="og:image" content="Photos/profile_picture.jpg">
+  <meta property="og:locale" content="en_GB">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maëlan Tomasek — Animal Cognition Researcher &amp; Author">
+  <meta name="twitter:description" content="PhD researcher in comparative psychology and veterinarian studying animal cognition and the evolution of cognitive abilities.">
+  <meta name="twitter:image" content="Photos/profile_picture.jpg">
+
+  <link rel="icon" href="Photos/flavicon.jpg" type="image/jpeg">
+
+  <!-- Schema.org Person JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Maëlan Tomasek",
+    "jobTitle": "PhD Researcher in Comparative Psychology",
+    "description": "Researcher in animal cognition, veterinarian, science communicator, and author specialising in the evolution of cognitive abilities in Tanganyikan cichlids.",
+    "email": "maelan.tomasek@hotmail.fr",
+    "affiliation": [
+      {
+        "@type": "Organization",
+        "name": "LAboratoire de Psychologie Sociale et COgnitive (LAPSCO), CNRS / Université Clermont Auvergne",
+        "address": {"@type": "PostalAddress", "addressLocality": "Clermont-Ferrand", "addressCountry": "FR"}
+      },
+      {
+        "@type": "Organization",
+        "name": "Max Planck Institute of Animal Behaviour",
+        "address": {"@type": "PostalAddress", "addressLocality": "Konstanz", "addressCountry": "DE"}
+      }
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=TQAqUQYAAAAJ&hl=fr&oi=ao",
+      "https://orcid.org/0000-0003-0879-1700",
+      "https://www.researchgate.net/profile/Maelan-Tomasek"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ─── RESET & BASE ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    :root {
+      --c1: #FFD400;
+      --c2: #FFC300;
+      --c3: #FF8C00;
+      --c4: #FF5F00;
+      --grad: linear-gradient(135deg, var(--c1) 0%, var(--c4) 100%);
+      --grad-soft: linear-gradient(135deg, rgba(255,212,0,.15) 0%, rgba(255,95,0,.15) 100%);
+      --text: #1C1C1E;
+      --text-muted: #636366;
+      --text-light: #8E8E93;
+      --bg: #FFFFFF;
+      --bg-alt: #F8F7F3;
+      --border: #E5E5EA;
+      --radius: 10px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 6px rgba(0,0,0,.07);
+      --shadow: 0 4px 24px rgba(0,0,0,.10);
+      --shadow-lg: 0 8px 40px rgba(0,0,0,.14);
+      --nav-h: 64px;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', Arial, sans-serif;
+      --font-serif: Georgia, 'Times New Roman', Times, serif;
+      --max-w: 860px;
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--c3); text-decoration: none; }
+    a:hover { color: var(--c4); text-decoration: underline; }
+    img { display: block; max-width: 100%; }
+
+    /* ─── NAVIGATION ───────────────────────────────────────────── */
+    .site-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--nav-h);
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 2px solid transparent;
+      border-image: var(--grad) 1;
+      z-index: 1000;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .nav-logo {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text);
+      letter-spacing: -.01em;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .nav-logo span {
+      display: inline-block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--c3);
+      vertical-align: middle;
+      margin-left: 4px;
+      margin-bottom: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: .92rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: color .2s, background .2s;
+      text-decoration: none;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--c4);
+      background: rgba(255,140,0,.08);
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      color: var(--text);
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    /* ─── PAGE OFFSET (fixed nav) ──────────────────────────────── */
+    section[id] { scroll-margin-top: var(--nav-h); }
+
+    /* ─── HERO ─────────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: calc(var(--nav-h) + 40px) 24px 60px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(15,12,6,.6) 0%, rgba(30,20,5,.7) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 680px;
+    }
+
+    .hero-photo {
+      width: 156px;
+      height: 156px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 4px solid var(--c1);
+      margin: 0 auto 28px;
+      box-shadow: 0 0 0 6px rgba(255,212,0,.2), var(--shadow-lg);
+    }
+
+    .hero-name {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -.02em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .hero-role {
+      font-size: clamp(.85rem, 2.2vw, 1rem);
+      color: rgba(255,255,255,.82);
+      font-weight: 400;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .hero-tagline {
+      font-family: var(--font-serif);
+      font-size: clamp(1.05rem, 3vw, 1.35rem);
+      font-style: italic;
+      color: var(--c1);
+      margin-bottom: 36px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: .9rem;
+      font-weight: 600;
+      transition: transform .15s, box-shadow .15s, background .2s;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.25); text-decoration: none; }
+    .btn-primary { background: var(--c1); color: #1a1000; }
+    .btn-primary:hover { background: var(--c2); color: #1a1000; }
+    .btn-ghost { background: rgba(255,255,255,.12); color: #fff; border: 1.5px solid rgba(255,255,255,.35); }
+    .btn-ghost:hover { background: rgba(255,255,255,.22); color: #fff; }
+    .btn-outline { background: transparent; color: var(--c3); border: 1.5px solid var(--c3); }
+    .btn-outline:hover { background: var(--c3); color: #fff; }
+
+    /* ─── CONTAINER ────────────────────────────────────────────── */
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+    /* ─── PAGE CONTENT AREAS ───────────────────────────────────── */
+    .page-content { background: var(--bg); padding: 60px 0 72px; }
+    .page-content.alt { background: var(--bg-alt); }
+
+    /* ─── SECTION BANNER ───────────────────────────────────────── */
+    .section-banner {
+      position: relative;
+      height: clamp(180px, 28vw, 300px);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      padding: 0 0 28px;
+    }
+    .section-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(10,8,2,.25) 0%, rgba(10,8,2,.65) 100%);
+    }
+    .section-banner-content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section-banner-content h2 {
+      font-size: clamp(1.7rem, 5vw, 2.6rem);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -.02em;
+    }
+    .section-banner-content h2::after {
+      content: '';
+      display: block;
+      width: 48px; height: 4px;
+      border-radius: 2px;
+      background: var(--grad);
+      margin-top: 8px;
+    }
+
+    /* ─── ABOUT BLOCK ──────────────────────────────────────────── */
+    .about-block { margin-bottom: 52px; }
+    .about-block p { font-size: 1.06rem; color: var(--text); max-width: 680px; }
+    .about-block p + p { margin-top: 14px; }
+
+    .section-heading {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 24px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+      position: relative;
+    }
+    .section-heading::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -2px;
+      width: 40px; height: 2px;
+      background: var(--grad);
+    }
+
+    /* ─── NOVEL PROMO ──────────────────────────────────────────── */
+    .novel-promo {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--c3);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      margin-top: 20px;
+    }
+
+    .novel-cover {
+      width: 110px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      box-shadow: var(--shadow);
+    }
+
+    .novel-eyebrow {
+      display: inline-block;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--c4);
+      background: rgba(255,95,0,.1);
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .novel-promo h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .novel-promo p { font-size: .97rem; color: var(--text-muted); margin-bottom: 16px; }
+
+    .novel-links { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    /* ─── ACCORDION ────────────────────────────────────────────── */
+    .accordion {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: box-shadow .2s;
+    }
+    .accordion[open] { box-shadow: var(--shadow-sm); }
+
+    .accordion > summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 22px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+      background: var(--bg);
+      color: var(--text);
+      transition: background .15s;
+      gap: 12px;
+    }
+    .accordion > summary::-webkit-details-marker { display: none; }
+    .accordion > summary::after {
+      content: '';
+      display: block;
+      width: 10px; height: 10px;
+      border-right: 2px solid var(--c3);
+      border-bottom: 2px solid var(--c3);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+      transition: transform .25s;
+    }
+    .accordion[open] > summary::after { transform: rotate(-135deg); }
+    .accordion > summary:hover { background: var(--bg-alt); }
+    .accordion[open] > summary { background: var(--bg-alt); color: var(--c4); border-bottom: 1px solid var(--border); }
+
+    .accordion-body { padding: 28px 22px; background: var(--bg); }
+    .accordion-body p { margin-bottom: 14px; font-size: 1rem; }
+    .accordion-body p:last-child { margin-bottom: 0; }
+
+    /* ─── PUBLICATION LIST ─────────────────────────────────────── */
+    .pub-group { margin-bottom: 36px; }
+    .pub-group:last-child { margin-bottom: 0; }
+    .pub-group-title {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pub-item {
+      position: relative;
+      padding: 16px 18px 16px 22px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      background: var(--bg-alt);
+      border-left: 3px solid var(--c2);
+      font-size: .94rem;
+      line-height: 1.6;
+    }
+    .pub-item:last-child { margin-bottom: 0; }
+    .pub-item .pub-authors { color: var(--text-muted); }
+    .pub-item .pub-authors strong { color: var(--text); font-weight: 700; }
+    .pub-item .pub-title { font-weight: 600; color: var(--text); margin: 2px 0; }
+    .pub-item .pub-journal { font-style: italic; color: var(--text-muted); }
+    .pub-item .pub-doi a { font-size: .85rem; color: var(--c3); }
+    .pub-item .pub-award {
+      display: inline-block;
+      font-size: .76rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--c4);
+      background: rgba(255,95,0,.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-top: 5px;
+    }
+
+    .talk-item {
+      padding: 14px 18px 14px 22px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      background: var(--bg-alt);
+      border-left: 3px solid var(--c1);
+      font-size: .94rem;
+    }
+    .talk-item .talk-title { font-weight: 600; color: var(--text); }
+    .talk-item .talk-venue { font-size: .88rem; color: var(--text-muted); margin-top: 3px; }
+    .talk-item .pub-award { display: inline-block; font-size: .76rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--c4); background: rgba(255,95,0,.1); padding: 2px 8px; border-radius: 4px; margin-top: 5px; }
+
+    /* ─── SCICOMM WORKS ────────────────────────────────────────── */
+    .work-item {
+      padding: 16px 18px 16px 22px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      background: var(--bg-alt);
+      border-left: 3px solid var(--c3);
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+    .work-item .work-title { font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .work-item .work-desc { color: var(--text-muted); font-size: .9rem; }
+
+    /* ─── BOOK SECTION ─────────────────────────────────────────── */
+    .book-card {
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+    }
+    .book-card-cover {
+      width: 150px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    .book-meta-badge {
+      display: inline-block;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      background: var(--grad);
+      color: #1a1000;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    .book-meta-badge + .book-meta-badge { margin-left: 8px; }
+    .book-title { font-size: 1.35rem; font-weight: 700; margin-bottom: 6px; }
+    .book-subtitle { font-size: .95rem; color: var(--text-muted); margin-bottom: 14px; font-style: italic; }
+    .book-desc { font-size: .97rem; margin-bottom: 18px; line-height: 1.65; }
+    .book-note { font-size: .88rem; color: var(--text-muted); margin-bottom: 18px; }
+
+    /* ─── CONTACT ──────────────────────────────────────────────── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 32px;
+    }
+    .contact-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+    }
+    .contact-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 14px; color: var(--text); }
+    .contact-card a { display: block; margin-bottom: 10px; font-size: .97rem; color: var(--c3); }
+    .contact-card a:hover { color: var(--c4); }
+
+    .contact-email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text) !important;
+      padding: 14px 20px;
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      transition: border-color .2s, box-shadow .2s;
+      text-decoration: none !important;
+    }
+    .contact-email-link:hover { border-color: var(--c3); box-shadow: 0 0 0 3px rgba(255,140,0,.12); }
+
+    .profile-links { display: flex; flex-direction: column; gap: 10px; }
+    .profile-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-size: .93rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: border-color .2s, background .2s;
+      text-decoration: none;
+    }
+    .profile-link:hover { border-color: var(--c3); background: rgba(255,140,0,.04); color: var(--c4); text-decoration: none; }
+    .profile-link-icon {
+      width: 32px; height: 32px;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .75rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .icon-scholar { background: #4285F4; color: #fff; }
+    .icon-orcid   { background: #A6CE39; color: #fff; }
+    .icon-rg      { background: #40BA9B; color: #fff; }
+    .icon-ethosphr { background: #6B4FBB; color: #fff; }
+
+    /* ─── AFFILIATIONS STRIP ───────────────────────────────────── */
+    .affiliations {
+      margin-top: 40px;
+      padding: 22px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .affiliations p {
+      font-size: .88rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+    .affiliations a { color: var(--c3); }
+
+    /* ─── FOOTER ───────────────────────────────────────────────── */
+    footer {
+      background: #111;
+      color: rgba(255,255,255,.5);
+      text-align: center;
+      padding: 28px 24px;
+      font-size: .85rem;
+    }
+    footer a { color: var(--c2); }
+
+    /* ─── NEWS PLACEHOLDER ─────────────────────────────────────── */
+    .news-placeholder {
+      text-align: center;
+      padding: 48px 24px;
+      color: var(--text-muted);
+    }
+    .news-placeholder .news-icon {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      opacity: .4;
+    }
+    .news-placeholder p { font-size: .97rem; }
+
+    /* ─── UTILITIES ────────────────────────────────────────────── */
+    .mt-8  { margin-top: 8px; }
+    .mt-16 { margin-top: 16px; }
+    .mt-24 { margin-top: 24px; }
+    .gap-wrap { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    /* ─── RESPONSIVE ───────────────────────────────────────────── */
+    @media (max-width: 700px) {
+      :root { --nav-h: 56px; }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: var(--nav-h);
+        left: 0; right: 0;
+        background: rgba(255,255,255,.97);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border);
+        padding: 12px 0 18px;
+        gap: 2px;
+        box-shadow: var(--shadow);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 12px 24px; font-size: 1rem; border-radius: 0; }
+      .nav-toggle { display: block; }
+
+      .hero { min-height: 100svh; }
+      .hero-photo { width: 120px; height: 120px; }
+
+      .novel-promo { flex-direction: column; gap: 20px; padding: 22px; }
+      .novel-cover { width: 90px; }
+
+      .book-card { flex-direction: column; gap: 20px; padding: 22px; }
+      .book-card-cover { width: 120px; }
+
+      .contact-grid { grid-template-columns: 1fr; }
+
+      .page-content { padding: 44px 0 56px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-actions .btn { font-size: .83rem; padding: 9px 16px; }
+      .novel-promo { padding: 18px; }
+      .book-card { padding: 18px; }
+      .accordion > summary { padding: 15px 16px; font-size: .97rem; }
+      .accordion-body { padding: 22px 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════════════════════ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#home">Maëlan Tomasek<span></span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="2" y1="6"  x2="20" y2="6"/>
+        <line x1="2" y1="11" x2="20" y2="11"/>
+        <line x1="2" y1="16" x2="20" y2="16"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#home"                  data-page="home">Home</a></li>
+      <li><a href="#research"              data-page="research">Research</a></li>
+      <li><a href="#science-communication" data-page="science-communication">Science Comm.</a></li>
+      <li><a href="#books"                 data-page="books">Books</a></li>
+      <li><a href="#contact"               data-page="contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 1 · HOME
+════════════════════════════════════════════════════════════════ -->
+<section id="home">
+
+  <!-- Hero -->
+  <div class="hero" style="background-image: url('Photos/banner_home.jpg');">
+    <div class="hero-content">
+      <img
+        class="hero-photo"
+        src="Photos/profile_picture.jpg"
+        alt="Maëlan Tomasek — researcher in animal cognition and veterinarian">
+      <h1 class="hero-name">Maëlan Tomasek</h1>
+      <p class="hero-role">Researcher in Animal Cognition &nbsp;·&nbsp; Veterinarian &nbsp;·&nbsp; Science Communicator &nbsp;·&nbsp; Author</p>
+      <p class="hero-tagline">Exploring the evolution of cognition in the wild</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary"
+           href="https://scholar.google.com/citations?user=TQAqUQYAAAAJ&hl=fr&oi=ao"
+           target="_blank" rel="noopener" aria-label="View Google Scholar profile">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5h3.6v.8C2.5 11.3 2 12.6 2 14c0 3.3 2.4 6 5.4 6.4L6 22h12l-1.4-1.6C19.6 20 22 17.3 22 14c0-1.4-.5-2.7-1.6-3.7v-.8H24L12 0z"/></svg>
+          Google Scholar
+        </a>
+        <a class="btn btn-ghost"
+           href="https://orcid.org/0000-0003-0879-1700"
+           target="_blank" rel="noopener" aria-label="View ORCID profile">
+          ORCID
+        </a>
+        <a class="btn btn-ghost"
+           href="https://www.researchgate.net/profile/Maelan-Tomasek"
+           target="_blank" rel="noopener" aria-label="View ResearchGate profile">
+          ResearchGate
+        </a>
+        <a class="btn btn-ghost"
+           href="CV_Tomasek.pdf"
+           target="_blank" aria-label="Download CV (PDF)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About + Novel promo -->
+  <div class="page-content">
+    <div class="container">
+
+      <div class="about-block">
+        <h2 class="section-heading">About Me</h2>
+        <p>I am a doctor in comparative psychology (PhD) and in veterinary medicine (DVM). I study animal behaviour and cognition, with a focus on how animals perceive their world and on the evolution of cognitive abilities.</p>
+        <p>My research centres on wild Tanganyikan cichlids as a model system for understanding the ecology and evolution of cognition. I am equally invested in animal welfare and the ethics of animal research.</p>
+        <p>I am also an author — my debut novel <em>Le Plafond</em> (<em>The Ceiling</em>) was published in 2025.</p>
+
+        <div class="affiliations">
+          <p>
+            PhD candidate at <a href="https://ethologiecognitiveetsociale.wordpress.com/" target="_blank" rel="noopener">LAPSCO, CNRS / Université Clermont Auvergne</a>
+            &nbsp;&amp;&nbsp;
+            <a href="https://www.bobwonglab.org/" target="_blank" rel="noopener">Max Planck Institute of Animal Behaviour</a> ·
+            Supervised by <a href="https://ethologiecognitiveetsociale.wordpress.com/" target="_blank" rel="noopener">Valérie Dufour</a> and <a href="https://thejordanlab.com/" target="_blank" rel="noopener">Alex Jordan</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Novel promo banner -->
+      <div class="novel-promo">
+        <img
+          class="novel-cover"
+          src="Photos/le_plafond_cover.png"
+          alt="Cover of Le Plafond (The Ceiling) by Maëlan Tomasek">
+        <div>
+          <span class="novel-eyebrow">New novel out now!</span>
+          <h3>Le Plafond — <em>The Ceiling</em></h3>
+          <p>Are you ready to change the way you view difference? A science-fiction novel exploring ethology and animal cognition.</p>
+          <p style="font-size:.88rem;color:var(--text-light);margin-bottom:16px;">🏆 Shortlisted for the Librinova Star Prize 2025 &nbsp;·&nbsp; Available in French</p>
+          <div class="novel-links">
+            <a class="btn btn-primary"
+               href="https://www.librinova.com/librairie/maelan-tomasek/le-plafond-1"
+               target="_blank" rel="noopener" aria-label="Buy Le Plafond on Librinova">Librinova</a>
+            <a class="btn btn-outline"
+               href="https://www.fnac.com/a21829980/Maelan-Tomasek-Le-Plafond"
+               target="_blank" rel="noopener" aria-label="Buy Le Plafond on Fnac">Fnac</a>
+            <a class="btn btn-outline" href="#books" aria-label="Learn more about the book">Learn more →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 2 · RESEARCH
+════════════════════════════════════════════════════════════════ -->
+<section id="research">
+
+  <div class="section-banner" style="background-image: url('Photos/banner_research.jpg');" role="img" aria-label="Underwater photograph used as research section banner">
+    <div class="section-banner-content">
+      <h2>Research</h2>
+    </div>
+  </div>
+
+  <div class="page-content alt">
+    <div class="container">
+
+      <!-- Accordion 1: About -->
+      <details class="accordion" open>
+        <summary>About My Research</summary>
+        <div class="accordion-body">
+          <p>In my research I am interested in how animals look at the world and at the evolution of cognition. I use wild Tanganyikan cichlids — a spectacular adaptive radiation of freshwater fish — as a model system to ask comparative questions about cognitive abilities under natural ecological conditions.</p>
+          <p>By studying cognition in the wild, I aim to understand how and why cognitive abilities evolve, and how they are shaped by ecology, sociality, and individual experience.</p>
+          <p>I am also deeply interested in animal welfare and the ethics of using animals in research. I believe that rigorous science and compassionate treatment of animals are fully compatible goals.</p>
+        </div>
+      </details>
+
+      <!-- Accordion 2: Publications -->
+      <details class="accordion">
+        <summary>Publications &amp; Presentations</summary>
+        <div class="accordion-body">
+
+          <!-- Published papers -->
+          <div class="pub-group">
+            <p class="pub-group-title">Peer-reviewed publications</p>
+
+            <div class="pub-item">
+              <p class="pub-authors">Goverts Z, <strong>Tomasek M</strong>, &amp; Jordan A. (2026)</p>
+              <p class="pub-title">Comparative spatial cognition in wild Tanganyikan cichlids: navigation performance varies with home range and shelter availability.</p>
+              <p class="pub-journal">Animal Cognition</p>
+              <p class="pub-doi"><a href="https://doi.org/10.1007/s10071-026-02064-2" target="_blank" rel="noopener">doi: 10.1007/s10071-026-02064-2</a></p>
+            </div>
+
+            <div class="pub-item">
+              <p class="pub-authors">Martin K, <strong>Tomasek M</strong>, Hivet A, Ravignani A, Obin N, Dufour V. (2026)</p>
+              <p class="pub-title">Rooks (<em>Corvus frugilegus</em>) can show spontaneous vocal flexibility when exposed to dynamically changing rhythmic sounds.</p>
+              <p class="pub-journal">Animal Cognition</p>
+              <p class="pub-doi"><a href="https://doi.org/10.1007/s10071-025-02038-w" target="_blank" rel="noopener">doi: 10.1007/s10071-025-02038-w</a></p>
+            </div>
+
+            <div class="pub-item">
+              <p class="pub-authors"><strong>Tomasek M</strong>, Dufour V*, &amp; Jordan A*. (2025)</p>
+              <p class="pub-title">Experimental study of social learning in three wild shell-dwelling Tanganyikan cichlids that vary in sociality.</p>
+              <p class="pub-journal">International Journal of Comparative Psychology</p>
+              <p class="pub-doi"><a href="https://doi.org/10.46867/ijcp.47088" target="_blank" rel="noopener">doi: 10.46867/ijcp.47088</a></p>
+            </div>
+
+            <div class="pub-item">
+              <p class="pub-authors"><strong>Tomasek M</strong>*, Soller K*, &amp; Jordan A. (2025)</p>
+              <p class="pub-title">Wild fish use visual cues to recognize individual divers.</p>
+              <p class="pub-journal">Biology Letters</p>
+              <p class="pub-doi"><a href="https://doi.org/10.1098/rsbl.2024.0558" target="_blank" rel="noopener">doi: 10.1098/rsbl.2024.0558</a></p>
+            </div>
+
+            <div class="pub-item">
+              <p class="pub-authors"><strong>Tomasek M</strong>, Soller K, Dufour V*, &amp; Jordan A*. (2024)</p>
+              <p class="pub-title">Differences in inhibitory control in two species of Tanganyikan bower-building cichlids contrasting in building flexibility.</p>
+              <p class="pub-journal">Ecology &amp; Evolution</p>
+              <p class="pub-doi"><a href="https://doi.org/10.1002/ece3.11406" target="_blank" rel="noopener">doi: 10.1002/ece3.11406</a></p>
+            </div>
+
+            <div class="pub-item">
+              <p class="pub-authors"><strong>Tomasek M</strong>, Stark M, Dufour V*, &amp; Jordan A*. (2023)</p>
+              <p class="pub-title">Cognitive flexibility in a Tanganyikan bower-building cichlid, <em>Aulonocranus dewindti</em>.</p>
+              <p class="pub-journal">Animal Cognition</p>
+              <p class="pub-doi"><a href="https://doi.org/10.1007/s10071-023-01830-w" target="_blank" rel="noopener">doi: 10.1007/s10071-023-01830-w</a></p>
+            </div>
+
+            <div class="pub-item">
+              <p class="pub-authors"><strong>Tomasek M</strong>, Ravignani A, Boucherie P, Van Meyel S, &amp; Dufour V. (2023)</p>
+              <p class="pub-title">Spontaneous vocal coordination of vocalizations to water noise in rooks (<em>Corvus frugilegus</em>): an exploratory study.</p>
+              <p class="pub-journal">Ecology and Evolution</p>
+              <p class="pub-doi"><a href="https://doi.org/10.1002/ece3.9791" target="_blank" rel="noopener">doi: 10.1002/ece3.9791</a></p>
+            </div>
+
+            <div class="pub-item">
+              <p class="pub-authors"><strong>Tomasek M</strong>. (2022)</p>
+              <p class="pub-title">Impact de la santé en recherche comportementale et cognitive : focus sur les organismes aquatiques. <em>(Veterinary thesis: Impact of health in behavioural and cognitive research: focus on aquatic organisms)</em></p>
+              <p class="pub-doi"><a href="https://dumas.ccsd.cnrs.fr/dumas-03934194" target="_blank" rel="noopener">⟨dumas-03934194⟩</a></p>
+            </div>
+          </div>
+
+          <!-- Oral presentations -->
+          <div class="pub-group">
+            <p class="pub-group-title">Oral presentations</p>
+
+            <div class="talk-item">
+              <p class="talk-title">"Wild cognition: is something fishy with traditional evolutionary theories of cognition?"</p>
+              <p class="talk-venue">Invited seminar, School of Biological Sciences, Monash University, Australia (2026)</p>
+            </div>
+
+            <div class="talk-item">
+              <p class="talk-title">"Decision-making strategies of two related fish species diverge under increased perceptual load"</p>
+              <p class="talk-venue">Congress of the French Society for the Study of Animal Behaviour SFECA (2025)</p>
+              <span class="pub-award">🏆 Best Student Talk</span>
+            </div>
+
+            <div class="talk-item">
+              <p class="talk-title">"How may fish help us navigate the troubled waters of animal cognition?"</p>
+              <p class="talk-venue">Invited seminar — Behavioural Ecology Research Group, Monash University (2024); Behavioural, Ecology and Evolution of Fishes Research Group, Macquarie University (2024); Behaviour and Biomechanics Research Group, Oxford University (2025)</p>
+            </div>
+
+            <div class="talk-item">
+              <p class="talk-title">"Inhibitory control in Tanganyikan bower-building cichlids covaries with bower complexity"</p>
+              <p class="talk-venue">Congress of the International Society for Behavioural Ecology ISBE (2024)</p>
+            </div>
+
+            <div class="talk-item">
+              <p class="talk-title">"Evolution of cognitive abilities in an adaptive radiation model: cichlids of Lake Tanganyika"</p>
+              <p class="talk-venue">Invited seminar, Early-Career Researchers Discord group, SFECA (2024)</p>
+            </div>
+
+            <div class="talk-item">
+              <p class="talk-title">"Growing wild: Fish cognition in the field"</p>
+              <p class="talk-venue">Invited seminar, Department of Aquaculture and Fish Biology, Hólar University, Iceland (2024)</p>
+            </div>
+
+            <div class="talk-item">
+              <p class="talk-title">"Pubescent teenagers or Tanganyikan cichlids? Cognitive experiments with unmotivated wild fish"</p>
+              <p class="talk-venue">ASAB Behaviour Congress, Bielefeld, Germany (2023)</p>
+              <span class="pub-award">🏆 Best Student Talk</span>
+            </div>
+
+            <div class="talk-item">
+              <p class="talk-title">"Cognitive flexibility in a wild Tanganyikan cichlid, <em>Aulonocranus dewindti</em>"</p>
+              <p class="talk-venue">Congress of the French Society for the Study of Animal Behaviour SFECA (2023)</p>
+            </div>
+
+            <div class="talk-item">
+              <p class="talk-title">"Spontaneous vocal coordination of vocalisations in rooks"</p>
+              <p class="talk-venue">Congress of the French Society for the Study of Animal Behaviour SFECA (2019)</p>
+            </div>
+          </div>
+
+          <!-- Posters -->
+          <div class="pub-group">
+            <p class="pub-group-title">Scientific posters</p>
+
+            <div class="talk-item">
+              <p class="talk-title">"In turbid waters: ethology faced with ethical and health problematics with aquatic animals used in research"</p>
+              <p class="talk-venue">Congress of the French Society for the Study of Animal Behaviour SFECA (2023)</p>
+            </div>
+
+            <div class="talk-item">
+              <p class="talk-title">"Understanding the evolution of cognition in the wild: Tanganyikan cichlids as a model system"</p>
+              <p class="talk-venue">Symposium of the Max Planck Institute of Animal Behaviour, Germany (2022)</p>
+            </div>
+          </div>
+
+          <!-- Scientific engagement -->
+          <div class="pub-group">
+            <p class="pub-group-title">Scientific engagement</p>
+
+            <div class="work-item">
+              <p class="work-title">Board member, association <a href="https://ethosphr.com/" target="_blank" rel="noopener">Ethosph'R</a> (2025–present)</p>
+              <p class="work-desc">Scientific association for animal welfare and ethology.</p>
+            </div>
+
+            <div class="work-item">
+              <p class="work-title">Organising member, 2025 SFECAJr pre-congress day "Ethics in ethology"</p>
+              <p class="work-desc">Conferences on diversity, equity and inclusion, animal welfare, and ecological impacts of research practices. <a href="https://sfeca2025.sciencesconf.org/resource/page/id/10" target="_blank" rel="noopener">Programme →</a></p>
+            </div>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- Accordion 3: News -->
+      <details class="accordion">
+        <summary>News</summary>
+        <div class="accordion-body">
+          <div class="news-placeholder">
+            <div class="news-icon">📰</div>
+            <p>Blog posts about new publications are coming soon. Check back for accessible summaries of my latest research!</p>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 3 · SCIENCE COMMUNICATION
+════════════════════════════════════════════════════════════════ -->
+<section id="science-communication">
+
+  <div class="section-banner" style="background-image: url('Photos/banner_science_communication.jpg');" role="img" aria-label="Science communication section banner photo">
+    <div class="section-banner-content">
+      <h2>Science Communication</h2>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <div class="container">
+
+      <!-- Accordion 1: About -->
+      <details class="accordion" open>
+        <summary>About My Science Communication</summary>
+        <div class="accordion-body">
+          <p>In addition to my research, I am very involved in science communication. I believe that sharing science with broad audiences is one of the most important things a researcher can do — both to educate people about science and to build empathy for the animals we study.</p>
+          <p>From podcasts and live events to social media and public talks, I try to bring fish cognition (and science more broadly) to as many people as possible, in France and beyond.</p>
+        </div>
+      </details>
+
+      <!-- Accordion 2: Works -->
+      <details class="accordion">
+        <summary>Selected Works</summary>
+        <div class="accordion-body">
+
+          <div class="work-item">
+            <p class="work-title">Three Minutes Thesis competition (2025)</p>
+            <p class="work-desc">
+              2nd Jury Prize at the national finals ·
+              1st Jury Prize, Audience Prize &amp; High School Students Prize at the local finals.
+              <a href="https://www.youtube.com/watch?v=tIKPofi7zUA" target="_blank" rel="noopener">Watch on YouTube →</a>
+            </p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">"Loin des yeux, loin du cœur… de l'océan : changer de regard sur les poissons" (2025)</p>
+            <p class="work-desc">
+              Popularising blog article on fish welfare for Ethosph'R.
+              <a href="https://ethosphr.com/index.php/2025/06/03/loin-des-yeux-loin-du-coeur-de-locean-changer-de-regard-sur-les-poissons/" target="_blank" rel="noopener">Read the article →</a>
+            </p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">Content creation for Three Minutes Thesis France Instagram (2025)</p>
+            <p class="work-desc">
+              <a href="https://www.instagram.com/stories/highlights/18091290052634804/" target="_blank" rel="noopener">View highlights →</a>
+            </p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">"Pas con le poisson" — Podcast <em>Savants Sachant Chercher</em> (2024)</p>
+            <p class="work-desc">
+              Discussion of fish cognition and my own research.
+              <a href="https://scienceinfuse.cool/podcast/poissonpascon/" target="_blank" rel="noopener">Listen →</a>
+            </p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">YouTube Live with Sébastien Moro</p>
+            <p class="work-desc">
+              <a href="https://www.youtube.com/watch?v=OR365pJJJQ4" target="_blank" rel="noopener">Watch on YouTube →</a>
+            </p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">"Les poissons, pas si cons" — Live on Arte France Twitch (2023)</p>
+            <p class="work-desc">
+              Invited speaker to comment on an Arte documentary about fish cognition.
+              <a href="https://www.youtube.com/watch?v=lx2bSZc5XyE" target="_blank" rel="noopener">Watch on YouTube →</a>
+            </p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">Public intervention — Festival Pariscience (2022)</p>
+            <p class="work-desc">Public event for the transmission of the Arte documentary "Fish, not so dumb".</p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">Public intervention on Farm Animal Welfare — Ethosph'R, Strasbourg (2023)</p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">CNRS Échappées inattendues (October 2025)</p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">Congress France Universités — Sciences &amp; Société (October 2025)</p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">Puy de la Recherche (November 2025)</p>
+          </div>
+
+          <div class="work-item">
+            <p class="work-title">Podcast <em>Principes Fondamentaux</em> (November 2025)</p>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- Accordion 3: News -->
+      <details class="accordion">
+        <summary>News</summary>
+        <div class="accordion-body">
+          <div class="news-placeholder">
+            <div class="news-icon">🎙️</div>
+            <p>Updates on events, talks, and new media appearances coming soon!</p>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 4 · BOOKS
+════════════════════════════════════════════════════════════════ -->
+<section id="books">
+
+  <div class="section-banner" style="background-image: url('Photos/banner_writing.jpg');" role="img" aria-label="Books section banner photo">
+    <div class="section-banner-content">
+      <h2>Books</h2>
+    </div>
+  </div>
+
+  <div class="page-content alt">
+    <div class="container">
+
+      <!-- Accordion 1: About -->
+      <details class="accordion" open>
+        <summary>About My Books</summary>
+        <div class="accordion-body">
+          <p>As an author, I am interested in linking science with imagination, to push the limits of what we know and to raise empathy. Combining my scientific background with storytelling, I write fiction that invites readers to question their assumptions about perception, difference, and the animal world.</p>
+        </div>
+      </details>
+
+      <!-- Accordion 2: Le Plafond -->
+      <details class="accordion" open>
+        <summary>Le Plafond — <em>The Ceiling</em></summary>
+        <div class="accordion-body">
+          <div class="book-card">
+            <img
+              class="book-card-cover"
+              src="Photos/le_plafond_cover.png"
+              alt="Cover of Le Plafond (The Ceiling) by Maëlan Tomasek — a science-fiction novel exploring ethology and animal cognition">
+            <div>
+              <span class="book-meta-badge">Novel · 2025</span>
+              <span class="book-meta-badge" style="background: rgba(255,95,0,.12); color: var(--c4); font-size:.75rem; padding: 3px 10px; border-radius: 4px; display: inline-block; font-weight:700; letter-spacing:.06em; text-transform: uppercase; margin-left: 6px;">French only</span>
+              <h3 class="book-title">Le Plafond</h3>
+              <p class="book-subtitle">Science-fiction exploring ethology and animal cognition</p>
+              <p class="book-desc">
+                There, in the Around, danger lurks.
+                In the Around, the inhabitants of the People lead a peaceful existence, suspended between the Ground and the Ceiling. But a threat is growing in the shadows: death is approaching. The Others are coming. Faced with this imminent danger, there is only one question. And there can be only one answer: are the Others allies or enemies?
+              </p>
+              <p class="book-note">🏆 Shortlisted for the Librinova Star Prize 2025</p>
+              <div class="gap-wrap">
+                <a class="btn btn-primary"
+                   href="https://www.librinova.com/librairie/maelan-tomasek/le-plafond-1"
+                   target="_blank" rel="noopener" aria-label="Buy Le Plafond on Librinova">Buy on Librinova</a>
+                <a class="btn btn-outline"
+                   href="https://www.fnac.com/a21829980/Maelan-Tomasek-Le-Plafond"
+                   target="_blank" rel="noopener" aria-label="Buy Le Plafond on Fnac">Buy on Fnac</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- Accordion 3: News -->
+      <details class="accordion">
+        <summary>News</summary>
+        <div class="accordion-body">
+          <div class="news-placeholder">
+            <div class="news-icon">📖</div>
+            <p>Book signings, media appearances, and reviews will be posted here. Stay tuned!</p>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PAGE 5 · CONTACT
+════════════════════════════════════════════════════════════════ -->
+<section id="contact">
+
+  <div class="page-content" style="padding-top: calc(var(--nav-h) + 48px);">
+    <div class="container">
+
+      <h2 class="section-heading">Contact</h2>
+      <p style="color:var(--text-muted); font-size:1rem; margin-bottom: 32px; max-width: 520px;">
+        I am always happy to discuss research, potential collaborations, science communication, or my books. Feel free to reach out!
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Email -->
+        <div class="contact-card">
+          <h3>Email</h3>
+          <a class="contact-email-link" href="mailto:maelan.tomasek@hotmail.fr" aria-label="Send email to Maëlan Tomasek">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c3)" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            maelan.tomasek@hotmail.fr
+          </a>
+        </div>
+
+        <!-- Academic profiles -->
+        <div class="contact-card">
+          <h3>Academic Profiles</h3>
+          <div class="profile-links">
+            <a class="profile-link"
+               href="https://scholar.google.com/citations?user=TQAqUQYAAAAJ&hl=fr&oi=ao"
+               target="_blank" rel="noopener" aria-label="View Google Scholar profile">
+              <span class="profile-link-icon icon-scholar">GS</span>
+              Google Scholar
+            </a>
+            <a class="profile-link"
+               href="https://orcid.org/0000-0003-0879-1700"
+               target="_blank" rel="noopener" aria-label="View ORCID profile (0000-0003-0879-1700)">
+              <span class="profile-link-icon icon-orcid">iD</span>
+              ORCID · 0000-0003-0879-1700
+            </a>
+            <a class="profile-link"
+               href="https://www.researchgate.net/profile/Maelan-Tomasek"
+               target="_blank" rel="noopener" aria-label="View ResearchGate profile">
+              <span class="profile-link-icon icon-rg">RG</span>
+              ResearchGate
+            </a>
+          </div>
+        </div>
+
+        <!-- Affiliations -->
+        <div class="contact-card">
+          <h3>Affiliations</h3>
+          <a href="https://ethologiecognitiveetsociale.wordpress.com/" target="_blank" rel="noopener">LAPSCO, CNRS / Université Clermont Auvergne</a>
+          <a href="https://www.bobwonglab.org/" target="_blank" rel="noopener">Max Planck Institute of Animal Behaviour</a>
+          <a href="https://thejordanlab.com/" target="_blank" rel="noopener">The Jordan Lab</a>
+        </div>
+
+        <!-- Scientific associations -->
+        <div class="contact-card">
+          <h3>Associations</h3>
+          <div class="profile-links">
+            <a class="profile-link"
+               href="https://ethosphr.com/"
+               target="_blank" rel="noopener" aria-label="Visit Ethosph'R association website">
+              <span class="profile-link-icon icon-ethosphr">E</span>
+              Ethosph'R (Board member)
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════════ -->
+<footer>
+  <p>&copy; 2025 Maëlan Tomasek &mdash; Built with care.
+     &ensp;|&ensp; <a href="mailto:maelan.tomasek@hotmail.fr">maelan.tomasek@hotmail.fr</a>
+  </p>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════════════════════════ -->
+<script>
+  /* ── Mobile nav toggle ─────────────────────────────────── */
+  const toggle   = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  toggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+
+  /* Close nav on link click (mobile) */
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* Close nav on outside click */
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.site-nav')) {
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  /* ── Active nav link on scroll ─────────────────────────── */
+  const sections = document.querySelectorAll('section[id]');
+  const navItems = document.querySelectorAll('.nav-links a[data-page]');
+  const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'));
+
+  function setActive() {
+    let current = 'home';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - navH - 40) current = s.id;
+    });
+    navItems.forEach(a => {
+      a.classList.toggle('active', a.dataset.page === current);
+    });
+  }
+
+  window.addEventListener('scroll', setActive, { passive: true });
+  setActive();
+
+  /* ── Accordion smooth height animation ─────────────────── */
+  document.querySelectorAll('details.accordion').forEach(details => {
+    const summary = details.querySelector('summary');
+    const body    = details.querySelector('.accordion-body');
+    if (!summary || !body) return;
+
+    summary.addEventListener('click', e => {
+      e.preventDefault();
+      if (details.open) {
+        /* closing */
+        body.style.overflow = 'hidden';
+        const h = body.scrollHeight;
+        body.style.height = h + 'px';
+        requestAnimationFrame(() => {
+          body.style.transition = 'height .28s ease, opacity .22s ease';
+          body.style.height  = '0';
+          body.style.opacity = '0';
+        });
+        body.addEventListener('transitionend', () => {
+          details.open = false;
+          body.style.height = body.style.transition = body.style.opacity = '';
+        }, { once: true });
+      } else {
+        /* opening */
+        details.open = true;
+        const h = body.scrollHeight;
+        body.style.overflow = 'hidden';
+        body.style.height   = '0';
+        body.style.opacity  = '0';
+        requestAnimationFrame(() => {
+          body.style.transition = 'height .28s ease, opacity .22s ease';
+          body.style.height  = h + 'px';
+          body.style.opacity = '1';
+        });
+        body.addEventListener('transitionend', () => {
+          body.style.height = body.style.overflow = body.style.transition = body.style.opacity = '';
+        }, { once: true });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
