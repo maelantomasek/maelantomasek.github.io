@@ -3,35 +3,35 @@
 
   <!-- English pages -->
   <url>
-    <loc>http://www.maelantomasek.com/</loc>
+    <loc>https://www.maelantomasek.com/</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>http://www.maelantomasek.com/research.html</loc>
+    <loc>https://www.maelantomasek.com/research.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>http://www.maelantomasek.com/science-communication.html</loc>
+    <loc>https://www.maelantomasek.com/science-communication.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>http://www.maelantomasek.com/books.html</loc>
+    <loc>https://www.maelantomasek.com/books.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>http://www.maelantomasek.com/contact.html</loc>
+    <loc>https://www.maelantomasek.com/contact.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -39,35 +39,35 @@
 
   <!-- French pages -->
   <url>
-    <loc>http://www.maelantomasek.com/fr/index.html</loc>
+    <loc>https://www.maelantomasek.com/fr/index.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>http://www.maelantomasek.com/fr/recherche.html</loc>
+    <loc>https://www.maelantomasek.com/fr/recherche.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>http://www.maelantomasek.com/fr/communication-scientifique.html</loc>
+    <loc>https://www.maelantomasek.com/fr/communication-scientifique.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>http://www.maelantomasek.com/fr/livres.html</loc>
+    <loc>https://www.maelantomasek.com/fr/livres.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>http://www.maelantomasek.com/fr/contact.html</loc>
+    <loc>https://www.maelantomasek.com/fr/contact.html</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
