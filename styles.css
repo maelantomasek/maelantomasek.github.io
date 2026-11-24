@@ -98,3 +98,11 @@
 .social-text {
   text-align: center;
 }
+
+.pride-flag {
+  display: inline-block;
+  width: 30px;
+  height: auto;
+  margin-left: 7px;
+  vertical-align: middle;
+}
